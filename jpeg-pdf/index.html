@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img2PDF - Converta JPEG para PDF Grátis</title>
+    <meta name="description" content="Converta imagens para PDF online, rápido e sem custos. Suporta JPEG, PNG e mais.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Img2PDF</a>
+            <div class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="privacidade.html">Privacidade</a>
+                <a href="termos.html">Termos</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <h1><i class="fas fa-file-pdf"></i> Converta imagens para PDF em segundos</h1>
+        <p>Serviço 100% online, gratuito e sem limite de uso</p>
+        
+        <!-- Conversor (código existente) -->
+        <div class="container">
+            <div class="upload-zone" id="dropZone">
+                <div class="upload-text">
+                    <i class="fas fa-cloud-upload-alt fa-3x"></i>
+                    <div>Arraste e solte sua imagem aqui</div>
+                    <div class="upload-subtext">ou</div>
+                </div>
+                <label for="fileInput" class="upload-button">
+                    <i class="fas fa-folder-open"></i>
+                    Selecionar arquivo
+                </label>
+                <input type="file" id="fileInput" accept="image/jpeg,image/png">
+            </div>
+
+            <div class="preview-container" id="previewContainer">
+                <button class="remove-button" id="removeButton">&times;</button>
+                <img class="preview-image" id="previewImage">
+                <div class="preview-info" id="previewInfo"></div>
+            </div>
+
+            <div class="status-message" id="statusMessage"></div>
+
+            <button id="convertButton" class="convert-button">
+                <i class="fas fa-file-download"></i>
+                Converter para PDF
+            </button>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-lock"></i>
+                <h3>Privacidade Garantida</h3>
+                <p>Seus arquivos nunca são armazenados em nossos servidores</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Conversão Rápida</h3>
+                <p>Processamento em nuvem para máxima velocidade</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Compatível</h3>
+                <p>Funciona em qualquer dispositivo: celular, tablet ou computador</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacidade.html">Política de Privacidade</a>
+            <a href="termos.html">Termos de Uso</a>
+            <a href="contato.html">Contato</a>
+        </div>
+        <p>© 2025 Img2PDF - Desenvolvido por Matheus Ferreira</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
